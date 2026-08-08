@@ -1,0 +1,2038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OldMateStudios — Building Games That Matter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="logo">
+                <div class="logo-icon">OM</div>
+                OldMateStudios
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#studio">Studio</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#partners">Partners</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-glow hero-glow-1"></div>
+        <div class="hero-glow hero-glow-2"></div>
+        <div class="hero-glow hero-glow-3"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-tag reveal">
+                    <span class="hero-tag-dot"></span>
+                    Nairobi, Kenya — Game Development Studio
+                </div>
+                <h1 class="hero-headline reveal reveal-delay-1">
+                    We Build Games That <span>Inspire, Challenge, and Connect.</span>
+                </h1>
+                <p class="hero-description reveal reveal-delay-2">
+                    OldMateStudios is a Kenyan game studio creating innovative digital experiences for entertainment, education, and social impact. We combine African talent with world-class technology.
+                </p>
+                <div class="hero-ctas reveal reveal-delay-3">
+                    <a href="#projects" class="btn btn-primary">Explore Our Work</a>
+                    <a href="#team" class="btn btn-secondary">Meet the Team</a>
+                </div>
+                <div class="hero-stats reveal reveal-delay-4">
+                    <div class="glass-card hero-stat">
+                        <span class="hero-stat-number" data-target="2025">0</span>
+                        <span class="hero-stat-label">Founded</span>
+                    </div>
+                    <div class="glass-card hero-stat">
+                        <span class="hero-stat-number" data-target="6">0</span>
+                        <span class="hero-stat-label">Developers</span>
+                    </div>
+                    <div class="glass-card hero-stat">
+                        <span class="hero-stat-number" data-target="3">0</span>
+                        <span class="hero-stat-label">Partnerships</span>
+                    </div>
+                    <div class="glass-card hero-stat">
+                        <span class="hero-stat-number" data-target="1">0</span>
+                        <span class="hero-stat-label">Game in Dev</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-indicator-line"></div>
+        </div>
+    </section>
+        <!-- Studio Highlights -->
+    <section class="section highlights-section" id="highlights">
+        <div class="container">
+            <div class="highlights-grid">
+                <div class="highlight-card glass-card reveal">
+                    <div class="highlight-icon" style="--icon-color: var(--primary-emerald);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>Founded in Kenya</h3>
+                    <p>Building from Nairobi with global ambition. African talent, world-class standards.</p>
+                </div>
+                <div class="highlight-card glass-card reveal reveal-delay-1">
+                    <div class="highlight-icon" style="--icon-color: var(--accent-cyan);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>6 Developers</h3>
+                    <p>A multidisciplinary team of programmers, artists, designers, and storytellers.</p>
+                </div>
+                <div class="highlight-card glass-card reveal reveal-delay-2">
+                    <div class="highlight-icon" style="--icon-color: var(--accent-gold);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </div>
+                    <h3>International Partnerships</h3>
+                    <p>Collaborating with Level Labs, R42, and KAS to expand our reach and impact.</p>
+                </div>
+                <div class="highlight-card glass-card reveal">
+                    <div class="highlight-icon" style="--icon-color: #EC4899;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Multiplayer Expertise</h3>
+                    <p>Server-authoritative architecture and real-time networking for competitive play.</p>
+                </div>
+                <div class="highlight-card glass-card reveal reveal-delay-1">
+                    <div class="highlight-icon" style="--icon-color: #8B5CF6;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+                        </svg>
+                    </div>
+                    <h3>Educational Games</h3>
+                    <p>Serious games that teach, train, and transform how people learn through play.</p>
+                </div>
+                <div class="highlight-card glass-card reveal reveal-delay-2">
+                    <div class="highlight-icon" style="--icon-color: #F97316;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 4 12.66V22H8v-2.34A7 7 0 0 1 12 7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/>
+                        </svg>
+                    </div>
+                    <h3>AI Powered Experiences</h3>
+                    <p>Adaptive NPCs, procedural storytelling, and intelligent simulation systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Featured Project: EntrePoly -->
+    <section class="section featured-project" id="projects">
+        <div class="featured-project-bg"></div>
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Featured Project</span>
+                <h2 class="section-title">EntrePoly</h2>
+                <p class="section-subtitle">A business simulation multiplayer game born from a game jam, now in active development with international partners.</p>
+            </div>
+
+            <div class="featured-showcase reveal reveal-delay-1">
+                <div class="showcase-main glass-card">
+                    <div class="showcase-visual">
+                        <div class="showcase-image-wrapper">
+                            <img src="assets/projects/entrepoly-featured.png" alt="EntrePoly" class="showcase-image" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="showcase-placeholder" style="display:none;">
+                                <div class="placeholder-content">
+                                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                        <circle cx="8.5" cy="8.5" r="1.5"/>
+                                        <path d="M21 15l-5-5L5 21"/>
+                                    </svg>
+                                    <span>EntrePoly Gameplay Preview</span>
+                                    <small>Trailer & Screenshots Coming Soon</small>
+                                </div>
+                                <div class="showcase-overlay">
+                                    <button class="play-btn">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon points="5,3 19,12 5,21"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showcase-info">
+                        <div class="showcase-status">
+                            <span class="status-badge in-dev">In Development</span>
+                            <span class="status-text">Alpha Build</span>
+                        </div>
+                        <h3>The Game Jam Origin Story</h3>
+                        <p>EntrePoly began as a 48-hour prototype at the KAS Entrepreneurship Game Jam in Nairobi (June 22–24, 2026) — a multiplayer board game where players build businesses, negotiate deals, and outsmart competitors. The concept took first place and caught the attention of partners who saw its potential to teach real entrepreneurship through play.</p>
+                        
+                        <div class="showcase-features">
+                            <div class="feature-tag">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
+                                Multiplayer
+                            </div>
+                            <div class="feature-tag">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                                Business Sim
+                            </div>
+                            <div class="feature-tag">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
+                                Educational
+                            </div>
+                        </div>
+
+                        <div class="showcase-timeline">
+                            <div class="timeline-item active">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">June 2026</span>
+                                    <span class="timeline-event">Game Jam Win</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item active">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">July 2026</span>
+                                    <span class="timeline-event">R42 Partnership</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item active">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">August 2026</span>
+                                    <span class="timeline-event">KAS Collaboration</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">2027</span>
+                                    <span class="timeline-event">Beta Release</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showcase-actions">
+                            <a href="https://oldmatestudios.github.io/entrepoly-website/" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add this CSS to your stylesheet -->
+    <style>
+        .showcase-image-wrapper {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 12px;
+            position: relative;
+        }
+
+        .showcase-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .showcase-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #10B98115, #05966925);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+    </style>
+
+    <!-- Why OldMateStudios -->
+    <section class="section why-section" id="why">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Why Us</span>
+                <h2 class="section-title">Why OldMateStudios?</h2>
+                <p class="section-subtitle">We are not just building games. We are building a new standard for interactive experiences from Africa.</p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card glass-card reveal">
+                    <div class="why-number">01</div>
+                    <h3>Experienced Multidisciplinary Team</h3>
+                    <p>Our team spans gameplay programming, backend engineering, technical art, game design, and narrative design. Every discipline under one roof.</p>
+                </div>
+                <div class="why-card glass-card reveal reveal-delay-1">
+                    <div class="why-number">02</div>
+                    <h3>Built on Collaboration</h3>
+                    <p>We believe the best games come from diverse minds working together. Our culture prioritizes open communication and shared ownership.</p>
+                </div>
+                <div class="why-card glass-card reveal reveal-delay-2">
+                    <div class="why-number">03</div>
+                    <h3>Focused on Innovation</h3>
+                    <p>From AI-driven NPCs to procedural storytelling, we push boundaries. We prototype fast, validate early, and iterate relentlessly.</p>
+                </div>
+                <div class="why-card glass-card reveal">
+                    <div class="why-number">04</div>
+                    <h3>Global Partnerships</h3>
+                    <p>Strategic alliances with Level Labs, R42, and KAS give us access to funding, expertise, and international markets.</p>
+                </div>
+                <div class="why-card glass-card reveal reveal-delay-1">
+                    <div class="why-number">05</div>
+                    <h3>Long-Term Vision</h3>
+                    <p>We are building for sustainability. Every project is a step toward becoming Africa's leading game development studio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Philosophy -->
+    <section class="section philosophy-section" id="philosophy">
+        <div class="philosophy-bg"></div>
+        <div class="container">
+            <div class="philosophy-content reveal">
+                <span class="section-label">Our Process</span>
+                <h2 class="section-title">Our Development Philosophy</h2>
+                <div class="philosophy-steps">
+                    <div class="philosophy-step">
+                        <div class="step-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                            </svg>
+                        </div>
+                        <h3>Prototype Fast</h3>
+                        <p>Ideas are cheap. Working prototypes are gold. We build playable versions within days, not months.</p>
+                    </div>
+                    <div class="philosophy-connector"></div>
+                    <div class="philosophy-step">
+                        <div class="step-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                        </div>
+                        <h3>Validate Early</h3>
+                        <p>We test with real players at every stage. Data and feedback guide our decisions, not assumptions.</p>
+                    </div>
+                    <div class="philosophy-connector"></div>
+                    <div class="philosophy-step">
+                        <div class="step-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3>Build Sustainably</h3>
+                        <p>Clean architecture, scalable systems, and maintainable code. We build for the long haul.</p>
+                    </div>
+                    <div class="philosophy-connector"></div>
+                    <div class="philosophy-step">
+                        <div class="step-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3>Ship Polished Experiences</h3>
+                        <p>We do not release unfinished products. Every launch is a statement of quality and craftsmanship.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Studio Page -->
+    <section class="section studio-section" id="studio">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">The Studio</span>
+                <h2 class="section-title">Our Story</h2>
+                <p class="section-subtitle">From a game jam idea to a growing studio with international partnerships. This is how OldMateStudios came to life.</p>
+            </div>
+
+            <div class="studio-story reveal">
+                <!-- Origins -->
+                <div class="story-block">
+                    <div class="story-visual">
+                        <div class="story-image-wrapper">
+                            <img src="assets/studio/team-cchub.jpeg" alt="Team at IHUB Nairobi" class="story-image" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="story-image-placeholder" style="display:none;">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <span class="story-tag">Origins</span>
+                        <h3>Born at IHUB</h3>
+                        <p>OldMateStudios started where many great ideas do — at a game jam. In June 2026, a group of friends and developers gathered at <strong>Co-Creation Hub (IHUB) Nairobi</strong> for the KAS Entrepreneurship Game Jam, a 48-hour challenge co-hosted by the Konrad-Adenauer-Stiftung and Leipzig's R42 Games Hub.</p>
+                        <p>The result was a rough prototype of what would become EntrePoly — and a first-place finish that proved Kenyan developers could build compelling multiplayer experiences. That weekend, we discovered something: when African talent meets global ambition, the results speak for themselves.</p>
+                    </div>
+                </div>
+
+                <!-- Growth -->
+                <div class="story-block story-block-reverse">
+                    <div class="story-visual">
+                        <div class="story-image-wrapper">
+                            <img src="assets/studio/team-working.jpeg" alt="OldMateStudios team working" class="story-image" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="story-image-placeholder" style="display:none; background: linear-gradient(135deg, rgba(6,182,212,0.1), rgba(6,182,212,0.02));">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color: var(--accent-cyan);">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <span class="story-tag" style="color: var(--accent-cyan); border-color: var(--accent-cyan);">Growth</span>
+                        <h3>Building a Team</h3>
+                        <p>What began as a jam team quickly solidified into a six-person studio. Philip Katana handles finance and planning. Donald Bitange tests every build. Allan Robinson keeps production on track. Fred Gitonga crafts the UI/UX. Lilian Warutere drives marketing and research. Gichia builds the core game systems.</p>
+                        <p>Each member brought something unique — and together, we became more than the sum of our parts. We are not a company of departments. We are six people who ship.</p>
+                    </div>
+                </div>
+
+                <!-- Culture -->
+                <div class="story-block">
+                    <div class="story-visual">
+                        <div class="story-image-wrapper">
+                            <img src="assets/studio/culture.jpeg" alt="Studio culture" class="story-image" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="story-image-placeholder" style="display:none; background: linear-gradient(135deg, rgba(245,158,11,0.1), rgba(245,158,11,0.02));">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color: var(--accent-gold);">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <line x1="2" y1="12" x2="22" y2="12"/>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <span class="story-tag" style="color: var(--accent-gold); border-color: var(--accent-gold);">Culture</span>
+                        <h3>How We Work</h3>
+                        <p>We believe in flat hierarchies, radical transparency, and shipping often. Every team member has a voice in design decisions. We prototype in sprints, test with real players, and iterate based on feedback — not ego.</p>
+                        <p>Our culture is built on three pillars: <strong>craftsmanship</strong> (we care about every interaction), <strong>collaboration</strong> (no one builds alone), and <strong>impact</strong> (every game should teach something worth knowing).</p>
+                    </div>
+                </div>
+
+                <!-- Future -->
+                <div class="story-block story-block-reverse">
+                    <div class="story-visual">
+                        <div class="story-image-wrapper">
+                            <img src="assets/studio/future.jpeg" alt="Future plans" class="story-image" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="story-image-placeholder" style="display:none; background: linear-gradient(135deg, rgba(139,92,246,0.1), rgba(139,92,246,0.02));">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color: #8B5CF6;">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                    <path d="M2 17l10 5 10-5"/>
+                                    <path d="M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <span class="story-tag" style="color: #8B5CF6; border-color: #8B5CF6;">Future</span>
+                        <h3>Where We Are Going</h3>
+                        <p>Right now, EntrePoly is our focus — getting it from alpha to a polished release across PC, web, and mobile. We are also designing a physical board game version for classrooms and workshops.</p>
+                        <p>Long-term, we want to build games that only a team with our perspective could make — experiences rooted in African contexts, built for global audiences. We are not there yet. But we are building toward it, one project at a time.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="studio-timeline reveal">
+                <h3 class="timeline-title">Our Journey</h3>
+                <div class="timeline-track">
+                    <div class="timeline-milestone active">
+                        <div class="milestone-year">June 2026</div>
+                        <div class="milestone-dot"></div>
+                        <div class="milestone-label">Game Jam Win</div>
+                    </div>
+                    <div class="timeline-milestone active">
+                        <div class="milestone-year">July 2026</div>
+                        <div class="milestone-dot"></div>
+                        <div class="milestone-label">R42 Partnership</div>
+                    </div>
+                    <div class="timeline-milestone active">
+                        <div class="milestone-year">August 2026</div>
+                        <div class="milestone-dot"></div>
+                        <div class="milestone-label">KAS Collaboration</div>
+                    </div>
+                    <div class="timeline-milestone">
+                        <div class="milestone-year">2027</div>
+                        <div class="milestone-dot"></div>
+                        <div class="milestone-label">EntrePoly Release</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add this CSS to your stylesheet -->
+    <style>
+        .story-image-wrapper {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .story-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .story-image-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(16,185,129,0.1), rgba(16,185,129,0.02));
+        }
+    </style>
+
+<!-- Team Page -->
+
+    <section class="section team-section" id="team">
+        <div class="team-bg-glow"></div>
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">The People</span>
+                <h2 class="section-title">Meet the Team</h2>
+                <p class="section-subtitle">Six developers. One mission. Building games that matter from Nairobi, Kenya.</p>
+            </div>
+
+            <div class="team-grid">
+                <!-- Philip Katana -->
+                <div class="team-card glass-card reveal">
+                    <div class="team-photo">
+                        <div class="photo-wrapper passport-frame">
+                            <img src="assets/team/philip-unreal.jpeg" alt="Philip Katana" class="team-photo-img passport-photo" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="photo-placeholder passport-fallback" style="display:none; background: linear-gradient(135deg, #10B98120, #05966940);">
+                                <span class="photo-initials">PK</span>
+                            </div>
+                        </div>
+                        <div class="team-socials">
+                            <a href="#" class="social-link" title="LinkedIn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            </a>
+                            <a href="#" class="social-link" title="GitHub">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Philip Katana</h3>
+                        <span class="team-role">Finance Manager</span>
+                        <p class="team-bio">Managing budgets, financial planning, and resource allocation. Philip ensures the studio stays financially healthy while supporting ambitious creative goals.</p>
+                        <div class="team-skills">
+                            <span class="skill-tag">Financial Planning</span>
+                            <span class="skill-tag">Budget Management</span>
+                            <span class="skill-tag">Resource Allocation</span>
+                            <span class="skill-tag">Business Strategy</span>
+                        </div>
+                        <div class="team-projects">
+                            <span class="project-label">Projects:</span>
+                            <span class="project-name">EntrePoly</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Donald Bitange -->
+                <div class="team-card glass-card reveal reveal-delay-1">
+                    <div class="team-photo">
+                        <div class="photo-wrapper passport-frame">
+                            <img src="assets/team/don.jpeg" alt="Donald Bitange" class="team-photo-img passport-photo" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="photo-placeholder passport-fallback" style="display:none; background: linear-gradient(135deg, #06B6D420, #0891B240);">
+                                <span class="photo-initials">DB</span>
+                            </div>
+                        </div>
+                        <div class="team-socials">
+                            <a href="#" class="social-link" title="LinkedIn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            </a>
+                            <a href="#" class="social-link" title="GitHub">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Donald Bitange</h3>
+                        <span class="team-role">Gameplay Tester</span>
+                        <p class="team-bio">Rigorously testing game mechanics, identifying bugs, and ensuring a polished player experience. Donald catches the issues others miss before they reach players.</p>
+                        <div class="team-skills">
+                            <span class="skill-tag">QA Testing</span>
+                            <span class="skill-tag">Bug Tracking</span>
+                            <span class="skill-tag">Playtesting</span>
+                            <span class="skill-tag">Regression Testing</span>
+                        </div>
+                        <div class="team-projects">
+                            <span class="project-label">Projects:</span>
+                            <span class="project-name">EntrePoly</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Allan Robinson -->
+                <div class="team-card glass-card reveal reveal-delay-2">
+                    <div class="team-photo">
+                        <div class="photo-wrapper passport-frame">
+                            <img src="assets/team/allan-robinson.jpeg" alt="Allan Robinson" class="team-photo-img passport-photo" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="photo-placeholder passport-fallback" style="display:none; background: linear-gradient(135deg, #F59E0B20, #D9770640);">
+                                <span class="photo-initials">AR</span>
+                            </div>
+                        </div>
+                        <div class="team-socials">
+                            <a href="#" class="social-link" title="LinkedIn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            </a>
+                            <a href="#" class="social-link" title="Portfolio">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Allan Robinson</h3>
+                        <span class="team-role">Project Manager</span>
+                        <p class="team-bio">Coordinating timelines, managing deliverables, and keeping the team aligned. Allan ensures projects stay on track from concept to launch.</p>
+                        <div class="team-skills">
+                            <span class="skill-tag">Project Management</span>
+                            <span class="skill-tag">Agile/Scrum</span>
+                            <span class="skill-tag">Timeline Planning</span>
+                            <span class="skill-tag">Team Coordination</span>
+                        </div>
+                        <div class="team-projects">
+                            <span class="project-label">Projects:</span>
+                            <span class="project-name">EntrePoly</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fred Gitonga -->
+                <div class="team-card glass-card reveal">
+                    <div class="team-photo">
+                        <div class="photo-wrapper passport-frame">
+                            <img src="assets/team/fred-gitonga.jpeg" alt="Fred Gitonga" class="team-photo-img passport-photo" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="photo-placeholder passport-fallback" style="display:none; background: linear-gradient(135deg, #EC489920, #DB277740);">
+                                <span class="photo-initials">FG</span>
+                            </div>
+                        </div>
+                        <div class="team-socials">
+                            <a href="#" class="social-link" title="LinkedIn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            </a>
+                            <a href="#" class="social-link" title="GitHub">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Fred Gitonga</h3>
+                        <span class="team-role">UI/UX Developer</span>
+                        <p class="team-bio">Crafting intuitive interfaces and seamless user experiences. Fred bridges design and code to make EntrePoly feel polished and accessible.</p>
+                        <div class="team-skills">
+                            <span class="skill-tag">UI Development</span>
+                            <span class="skill-tag">UX Design</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Frontend</span>
+                        </div>
+                        <div class="team-projects">
+                            <span class="project-label">Projects:</span>
+                            <span class="project-name">EntrePoly</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lilian Warutere -->
+                <div class="team-card glass-card reveal reveal-delay-1">
+                    <div class="team-photo">
+                        <div class="photo-wrapper passport-frame">
+                            <img src="assets/team/lilian-warutere.jpeg" alt="Lilian Warutere" class="team-photo-img passport-photo" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="photo-placeholder passport-fallback" style="display:none; background: linear-gradient(135deg, #8B5CF620, #7C3AED40);">
+                                <span class="photo-initials">LW</span>
+                            </div>
+                        </div>
+                        <div class="team-socials">
+                            <a href="#" class="social-link" title="LinkedIn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            </a>
+                            <a href="#" class="social-link" title="Portfolio">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Lilian Warutere</h3>
+                        <span class="team-role">Marketing and Research</span>
+                        <p class="team-bio">Driving audience growth through strategic marketing and deep market research. Lilian ensures EntrePoly reaches the right players with the right message.</p>
+                        <div class="team-skills">
+                            <span class="skill-tag">Marketing Strategy</span>
+                            <span class="skill-tag">Market Research</span>
+                            <span class="skill-tag">Audience Growth</span>
+                            <span class="skill-tag">Analytics</span>
+                        </div>
+                        <div class="team-projects">
+                            <span class="project-label">Projects:</span>
+                            <span class="project-name">EntrePoly</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gichia -->
+                <div class="team-card glass-card reveal reveal-delay-2">
+                    <div class="team-photo">
+                        <div class="photo-wrapper passport-frame">
+                            <img src="assets/team/gichia.jpg" alt="Gichia" class="team-photo-img passport-photo" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="photo-placeholder passport-fallback" style="display:none; background: linear-gradient(135deg, #F9731620, #EA580C40);">
+                                <span class="photo-initials">GI</span>
+                            </div>
+                        </div>
+                        <div class="team-socials">
+                            <a href="#" class="social-link" title="LinkedIn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            </a>
+                            <a href="#" class="social-link" title="GitHub">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Gichia</h3>
+                        <span class="team-role">Game Development</span>
+                        <p class="team-bio">Building core game systems and gameplay features. Gichia turns design concepts into functional, engaging game mechanics that bring EntrePoly to life.</p>
+                        <div class="team-skills">
+                            <span class="skill-tag">Game Development</span>
+                            <span class="skill-tag">Dart</span>
+                            <span class="skill-tag">C#</span>
+                            <span class="skill-tag">Gameplay Systems</span>
+                        </div>
+                        <div class="team-projects">
+                            <span class="project-label">Projects:</span>
+                            <span class="project-name">EntrePoly</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add this CSS to your stylesheet for passport-style photos -->
+
+
+ <!-- Projects Grid -->
+    <section class="section projects-section" id="projects-grid">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title">Our Projects</h2>
+                <p class="section-subtitle">From game jam prototypes to full productions. Every project is a step toward our vision.</p>
+            </div>
+
+            <div class="projects-tabs reveal">
+                <button class="tab-btn active" data-tab="current">Current</button>
+                <button class="tab-btn" data-tab="upcoming">Upcoming</button>
+            </div>
+
+            <div class="projects-content">
+                <!-- Current Projects -->
+                <div class="tab-panel active" id="current">
+                    <div class="project-card-large glass-card reveal">
+                        <div class="project-card-visual">
+                            <div class="project-image-wrapper">
+                                <img src="assets/projects/entrepoly-featured.png" alt="EntrePoly" class="project-image" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="project-placeholder" style="display:none; background: linear-gradient(135deg, #10B98115, #05966925);">
+                                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                        <circle cx="8.5" cy="8.5" r="1.5"/>
+                                        <path d="M21 15l-5-5L5 21"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="project-status-badge in-dev">In Development</div>
+                        </div>
+                        <div class="project-card-info">
+                            <h3>EntrePoly</h3>
+                            <p class="project-type">Multiplayer Business Simulation</p>
+                            <p class="project-desc">A competitive board-game-style business simulator where players build companies, negotiate deals, and outsmart rivals. Born from a game jam, now backed by R42 and KAS.</p>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <span class="meta-label">Platform</span>
+                                    <span class="meta-value">PC, Web, Mobile</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-label">Engine</span>
+                                    <span class="meta-value">Custom Engine</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-label">Status</span>
+                                    <span class="meta-value">Alpha</span>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://oldmatestudios.github.io/entrepoly-website/" class="btn btn-primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upcoming Projects -->
+                <div class="tab-panel" id="upcoming">
+                    <div class="projects-grid-small">
+                        <div class="project-card-small glass-card reveal">
+                            <div class="project-small-visual">
+                                <div class="project-image-wrapper-small">
+                                    <img src="assets/projects/entrepoly-boardgame.png" alt="EntrePoly Board Game" class="project-image-small" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="project-placeholder-small" style="display:none; background: linear-gradient(135deg, #F59E0B15, #D9770625);">
+                                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-small-info">
+                                <h4>EntrePoly — Physical Board Game</h4>
+                                <p>A tabletop adaptation of EntrePoly for classrooms, workshops, and game nights. No screens required.</p>
+                                <span class="project-tag">In Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add this CSS to your stylesheet -->
+    <style>
+        .project-image-wrapper {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .project-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .project-image-wrapper-small {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .project-image-small {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+<!-- Partners -->
+    <section class="section partners-section" id="partners">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Collaborators</span>
+                <h2 class="section-title">Our Partners</h2>
+                <p class="section-subtitle">We work with collaborators who share our vision — not owners who dictate it. These partnerships amplify what we build.</p>
+            </div>
+
+            <div class="partners-grid">
+                <!-- Level Labs -->
+                <div class="partner-card glass-card reveal">
+                    <div class="partner-tier studio">Studio Partner</div>
+                    <div class="partner-logo">
+                        <div class="logo-placeholder" style="background: linear-gradient(135deg, #10B98120, #05966930);">
+                            <span class="logo-text">LL</span>
+                        </div>
+                    </div>
+                    <h3>Level Labs</h3>
+                    <span class="partner-type">Indie Game Studio — Leipzig, Germany</span>
+                    <p>Level Labs is a Leipzig-based indie game studio founded in April 2024 by Jennifer Funke (Creative Director), Daniel Zuher (Executive Director), and Philipp Illmer (CEO). They create their own games — experimental, fun, and made with passion — alongside "playful solutions" for learning and education. Their debut title <strong>DrillScape</strong> is a 2D space-mining roguelike where you control a speedy rover, mine deep for resources, upgrade tools, and escape before the toxic atmosphere closes in. They received the Press Start Games Grant and made their debut at Gamescom 2024.</p>
+                    <div class="partner-impact">
+                        <div class="impact-stat">
+                            <span class="impact-number">2024</span>
+                            <span class="impact-label">Founded in Leipzig</span>
+                        </div>
+                        <div class="impact-stat">
+                            <span class="impact-number">DrillScape</span>
+                            <span class="impact-label">Debut Title</span>
+                        </div>
+                    </div>
+                    <div class="partner-services">
+                        <span class="service-tag">Indie Game Development</span>
+                        <span class="service-tag">DrillScape</span>
+                        <span class="service-tag">Playful Solutions</span>
+                        <span class="service-tag">Creative Services</span>
+                    </div>
+                </div>
+
+                <!-- R42 Games Hub -->
+                <div class="partner-card glass-card reveal reveal-delay-1">
+                    <div class="partner-tier ecosystem">Ecosystem Partner</div>
+                    <div class="partner-logo">
+                        <div class="logo-placeholder" style="background: linear-gradient(135deg, #06B6D420, #0891B230);">
+                            <span class="logo-text">R42</span>
+                        </div>
+                    </div>
+                    <h3>R42 Games Hub</h3>
+                    <span class="partner-type">Games Ecosystem — Leipzig, Germany</span>
+                    <p>R42 is a 7-floor gaming ecosystem in the heart of Leipzig at Ritterstraße 42, opened April 1, 2026. Founded by Christopher Siebenhüner (CEO), Tom Potutschek (COO), and Ralph Hölzer, it brings together coworking spaces, a gaming arena, a production studio, Bar42, event spaces, and even apartments — all under one roof. It hosts regular game jams (including Global Game Jam Leipzig 2026) and runs the R42 Games Accelerator for startup founders in games and media. Over 30 creative minds from Gecko.1, Gecko.2, and N!CE power the hub.</p>
+                    <div class="partner-impact">
+                        <div class="impact-stat">
+                            <span class="impact-number">7 Floors</span>
+                            <span class="impact-label">Gaming Ecosystem</span>
+                        </div>
+                        <div class="impact-stat">
+                            <span class="impact-number">~2,000 m²</span>
+                            <span class="impact-label">Total Space</span>
+                        </div>
+                    </div>
+                    <div class="partner-services">
+                        <span class="service-tag">Game Jams</span>
+                        <span class="service-tag">Coworking</span>
+                        <span class="service-tag">R42 Accelerator</span>
+                        <span class="service-tag">Events & Esports</span>
+                    </div>
+                </div>
+
+                <!-- KAS -->
+                <div class="partner-card glass-card reveal reveal-delay-2">
+                    <div class="partner-tier educational">Educational Partner</div>
+                    <div class="partner-logo">
+                        <div class="logo-placeholder" style="background: linear-gradient(135deg, #F59E0B20, #D9770630);">
+                            <span class="logo-text">KAS</span>
+                        </div>
+                    </div>
+                    <h3>Konrad-Adenauer-Stiftung (KAS)</h3>
+                    <span class="partner-type">Political Foundation & Educational Outreach</span>
+                    <p>KAS is Germany's leading political foundation, active in over 120 countries. In Kenya, KAS runs entrepreneurship programs, policy dialogues, and educational initiatives. They co-organized the <strong>Entrepreneurship Game Jam 2026</strong> in Nairobi (June 22–24) in partnership with the Leipzig-based R42 Games Hub — the event where OldMateStudios first connected with the broader ecosystem. The jam brought together developers, designers, and entrepreneurs to build games with real-world impact.</p>
+                    <div class="partner-impact">
+                        <div class="impact-stat">
+                            <span class="impact-number">120+</span>
+                            <span class="impact-label">Countries Active</span>
+                        </div>
+                        <div class="impact-stat">
+                            <span class="impact-number">June 2026</span>
+                            <span class="impact-label">Nairobi Game Jam</span>
+                        </div>
+                    </div>
+                    <div class="partner-services">
+                        <span class="service-tag">Entrepreneurship Programs</span>
+                        <span class="service-tag">Game Jam Co-Host</span>
+                        <span class="service-tag">Educational Outreach</span>
+                        <span class="service-tag">Policy Dialogue</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Partnership Origin Story -->
+            <div class="partnership-story glass-card reveal">
+                <div class="story-header">
+                    <span class="section-label">How It Started</span>
+                    <h3>The Game Jam Connection</h3>
+                </div>
+                <div class="story-timeline-mini">
+                    <div class="story-step">
+                        <div class="step-dot"></div>
+                        <div class="step-content">
+                            <span class="step-date">June 22–24, 2026</span>
+                            <p>KAS and the Leipzig-based <strong>R42 Games Hub</strong> co-hosted the <strong>Entrepreneurship Game Jam</strong> in Nairobi — a 48-hour event bringing together developers, designers, and entrepreneurs to build games with real-world impact.</p>
+                        </div>
+                    </div>
+                    <div class="story-step">
+                        <div class="step-dot"></div>
+                        <div class="step-content">
+                            <span class="step-date">Post-Jam</span>
+                            <p>OldMateStudios' prototype caught the attention of the ecosystem. The intersection of multiplayer systems, educational outcomes, and African game development aligned with what partners like R42 (indie game hub) and Level Labs (indie studio) were looking to support.</p>
+                        </div>
+                    </div>
+                    <div class="story-step">
+                        <div class="step-dot"></div>
+                        <div class="step-content">
+                            <span class="step-date">Growth Phase</span>
+                            <p>These partnerships opened doors — from R42's game jam network and accelerator in Leipzig to Level Labs' indie game expertise, and KAS's ongoing educational and entrepreneurship programs across Kenya.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kenya Ecosystem Context -->
+            <div class="ecosystem-context reveal">
+                <div class="ecosystem-header">
+                    <h3>Building in Africa's Leading Startup Ecosystem</h3>
+                    <p>Kenya overtook Nigeria as Africa's top venture capital destination in 2025, with Kenyan startups raising <strong>$984 million</strong> — nearly a third of all startup capital raised across the continent. Nairobi now leads the continent in dealmaking, driven by a maturing ecosystem of investors, hubs, and policy support.</p>
+                </div>
+                <div class="ecosystem-stats">
+                    <div class="eco-stat glass-card">
+                        <span class="eco-number">$984M</span>
+                        <span class="eco-label">Kenyan Startup Funding 2025</span>
+                    </div>
+                    <div class="eco-stat glass-card">
+                        <span class="eco-number">#1</span>
+                        <span class="eco-label">In Africa for VC Raised</span>
+                    </div>
+                    <div class="eco-stat glass-card">
+                        <span class="eco-number">74+</span>
+                        <span class="eco-label">Private Hubs & Accelerators</span>
+                    </div>
+                    <div class="eco-stat glass-card">
+                        <span class="eco-number">1000+</span>
+                        <span class="eco-label">Active Startups in Kenya</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="future-partners reveal">
+                <h3>Future Partners</h3>
+                <p>We are actively seeking partnerships with organizations who believe in the future of African game development. The ecosystem is growing — <strong>Supercell's Developer Grants Program</strong> is now offering $20,000–$200,000 in equity-free funding to African game studios.</p>
+                <div class="future-tags">
+                    <span class="future-tag">Universities</span>
+                    <span class="future-tag">Publishers</span>
+                    <span class="future-tag">Investors</span>
+                    <span class="future-tag">NGOs</span>
+                    <span class="future-tag">Tech Companies</span>
+                    <span class="future-tag">Game Engines</span>
+                </div>
+                <a href="#contact" class="btn btn-primary">Partner With Us</a>
+            </div>
+        </div>
+    </section>
+
+<!-- News -->
+    <section class="section news-section" id="news">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">From the Studio</span>
+                <h2 class="section-title">News & Updates</h2>
+                <p class="section-subtitle">What we are building, where we are showing up, and who we are learning from.</p>
+            </div>
+
+            <div class="news-layout">
+                <!-- Featured Article -->
+                <article class="news-hero glass-card reveal">
+                    <div class="news-hero-image">
+                        <div class="news-hero-placeholder" style="background: linear-gradient(135deg, rgba(16,185,129,0.08), rgba(5,150,105,0.15));">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                        </div>
+                        <span class="news-hero-badge">Latest</span>
+                    </div>
+                    <div class="news-hero-content">
+                        <div class="news-meta">
+                            <span class="news-category event">Event</span>
+                            <time class="news-date">June 22–24, 2026</time>
+                        </div>
+                        <h3>OldMateStudios Wins First Place at KAS Entrepreneurship Game Jam</h3>
+                        <p>We built EntrePoly in 48 hours at the Entrepreneurship Game Jam 2026 in Nairobi, co-hosted by the Konrad-Adenauer-Stiftung (KAS) and the Leipzig-based R42 Games Hub. Our prototype — a multiplayer entrepreneurship board game — took first place among teams from across East Africa.</p>
+                        <p>The jam brought together developers, designers, and entrepreneurs to build games with real-world impact. EntrePoly's blend of educational content and competitive multiplayer gameplay stood out to judges looking for projects with both commercial potential and social value.</p>
+                        <a href="#" class="news-read-more">
+                            Read the full story
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Side Articles -->
+                <div class="news-side">
+                    <article class="news-side-item glass-card reveal reveal-delay-1">
+                        <div class="side-image">
+                            <div class="side-placeholder" style="background: linear-gradient(135deg, rgba(6,182,212,0.08), rgba(8,145,178,0.12));">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                        </div>
+                        <div class="side-content">
+                            <div class="side-meta">
+                                <span class="news-category partnership">Partnership</span>
+                                <time>July 2026</time>
+                            </div>
+                            <h4>R42 Games Hub Partnership</h4>
+                            <p>Following the game jam, we entered into a partnership with R42 Games Hub in Leipzig — a 7-floor gaming ecosystem that connects indie studios with investors, mentors, and publishing opportunities across Europe.</p>
+                            <a href="#" class="side-link">Read more →</a>
+                        </div>
+                    </article>
+
+                    <article class="news-side-item glass-card reveal reveal-delay-2">
+                        <div class="side-image">
+                            <div class="side-placeholder" style="background: linear-gradient(135deg, rgba(245,158,11,0.08), rgba(217,119,6,0.12));">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                        </div>
+                        <div class="side-content">
+                            <div class="side-meta">
+                                <span class="news-category partnership">Partnership</span>
+                                <time>August 2026</time>
+                            </div>
+                            <h4>KAS White-Label Build for EntrePoly</h4>
+                            <p>KAS has commissioned a white-label version of EntrePoly tailored for their entrepreneurship education programs across Kenya. The custom build adapts game mechanics to align with KAS curriculum objectives.</p>
+                            <a href="#" class="side-link">Read more →</a>
+                        </div>
+                    </article>
+
+                    <article class="news-side-item glass-card reveal">
+                        <div class="side-image">
+                            <div class="side-placeholder" style="background: linear-gradient(135deg, rgba(236,72,153,0.08), rgba(219,39,119,0.12));">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                            </div>
+                        </div>
+                        <div class="side-content">
+                            <div class="side-meta">
+                                <span class="news-category dev">Development</span>
+                                <time>Coming Soon</time>
+                            </div>
+                            <h4>EntrePoly Alpha — In Development</h4>
+                            <p>We are currently building out the full alpha version of EntrePoly, expanding from our game jam prototype into a polished multiplayer experience. Stay tuned for playtest announcements.</p>
+                            <a href="#" class="side-link">Read more →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Archive Link -->
+            <div class="news-archive reveal">
+                <a href="#" class="btn btn-secondary">View All Updates</a>
+            </div>
+        </div>
+    </section>
+
+ <!-- Careers -->
+    <section class="section careers-section" id="careers">
+        <div class="careers-bg"></div>
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Join Us</span>
+                <h2 class="section-title">Work With Us</h2>
+                <p class="section-subtitle">We are a small team doing ambitious work. If you want to build games that matter — from Nairobi, for the world — we want to hear from you.</p>
+            </div>
+
+            <div class="careers-intro reveal">
+                <div class="intro-block">
+                    <span class="intro-number">6</span>
+                    <span class="intro-label">People on the core team</span>
+                </div>
+                <div class="intro-divider"></div>
+                <div class="intro-block">
+                    <span class="intro-number">1</span>
+                    <span class="intro-label">Game in active development</span>
+                </div>
+                <div class="intro-divider"></div>
+                <div class="intro-block">
+                    <span class="intro-number">∞</span>
+                    <span class="intro-label">Ambition per capita</span>
+                </div>
+            </div>
+
+            <!-- Ways to Get Involved -->
+            <div class="careers-alt reveal">
+                <h3 class="alt-heading">Ways to Get Involved</h3>
+                <div class="alt-grid">
+                    <div class="alt-card glass-card">
+                        <div class="alt-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                            </svg>
+                        </div>
+                        <h4>Game Jams</h4>
+                        <p>We host quarterly jams in Nairobi. No experience required — just curiosity and a willingness to ship something in 48 hours.</p>
+                        <div class="alt-meta">
+                            <span class="alt-status">Next: October 2026</span>
+                            <a href="#" class="alt-link">Register interest →</a>
+                        </div>
+                    </div>
+
+                    <div class="alt-card glass-card">
+                        <div class="alt-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h4>Playtesting</h4>
+                        <p>Help us break things before players do. We run closed alpha sessions every two weeks and value honest, detailed feedback.</p>
+                        <div class="alt-meta">
+                            <span class="alt-status">Always open</span>
+                            <a href="#" class="alt-link">Join the Discord →</a>
+                        </div>
+                    </div>
+
+                    <div class="alt-card glass-card">
+                        <div class="alt-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h4>Freelance Collaborations</h4>
+                        <p>Composers, sound designers, writers, translators — if you are exceptional at what you do, we want to know you before we need you.</p>
+                        <div class="alt-meta">
+                            <span class="alt-status">Portfolio review</span>
+                            <a href="#contact" class="alt-link">Send your work →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Process -->
+            <div class="careers-process reveal">
+                <h3 class="process-heading">How We Collaborate</h3>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="process-number">1</div>
+                        <div class="process-content">
+                            <h5>Reach Out</h5>
+                            <p>Send your portfolio and a short note on why this work matters to you. No cover letters — just honesty.</p>
+                        </div>
+                    </div>
+                    <div class="process-connector"></div>
+                    <div class="process-step">
+                        <div class="process-number">2</div>
+                        <div class="process-content">
+                            <h5>Conversation</h5>
+                            <p>30-minute video call with a team member. We talk about your work, our work, and whether the fit feels right.</p>
+                        </div>
+                    </div>
+                    <div class="process-connector"></div>
+                    <div class="process-step">
+                        <div class="process-number">3</div>
+                        <div class="process-content">
+                            <h5>Collaborate</h5>
+                            <p>A small, paid task or jam session to see how we work together. We respect your time and pay for it.</p>
+                        </div>
+                    </div>
+                    <div class="process-connector"></div>
+                    <div class="process-step">
+                        <div class="process-number">4</div>
+                        <div class="process-content">
+                            <h5>Stay Connected</h5>
+                            <p>If the fit is right, we keep you in our network for future projects. If not, we give clear feedback.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final CTA -->
+            <div class="careers-final reveal">
+                <p>Want to work with us? Reach out — we are always open to meeting exceptional people.</p>
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+        <div class="contact-bg-glow"></div>
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <span class="section-label">Get In Touch</span>
+                    <h2 class="section-title">Let's Build Something Together</h2>
+                    <p class="contact-desc">Whether you are an investor, publisher, educator, or player — we want to hear from you. We read every message and reply within 48 hours.</p>
+
+                    <div class="contact-methods">
+                        <a href="mailto:hello@oldmatestudios.com" class="contact-method">
+                            <div class="method-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">Email</span>
+                                <span class="method-value">oldmatestudios@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">Location</span>
+                                <span class="method-value">Nairobi, Kenya</span>
+                                <span class="method-sublabel">GMT+3 · Available 9am–6pm EAT</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">Response Time</span>
+                                <span class="method-value">Within 48 hours</span>
+                                <span class="method-sublabel">Faster for partnership & investor inquiries</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-socials">
+                        <h4>Find us online</h4>
+                        <div class="social-chips">
+                            <a href="#" class="social-chip" aria-label="Twitter">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                                <span>Twitter / X</span>
+                            </a>
+                            <a href="#" class="social-chip" aria-label="LinkedIn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="#" class="social-chip" aria-label="GitHub">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="#" class="social-chip" aria-label="Discord">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+                                <span>Discord</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-faq">
+                        <h4>Common questions</h4>
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>Are you open to investment?</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes. We are currently raising a pre-seed round to scale EntrePoly and expand the team. If you are an angel investor or VC interested in African gaming, reach out.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>Can I visit the studio?</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We welcome visitors by appointment. Our workspace is in Nairobi — email us to schedule a visit and playtest session.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>Do you work with remote collaborators?</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Absolutely. Three of our current partnerships are remote-first. We use Discord, Notion, and GitHub to stay synced across time zones.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper glass-card reveal reveal-delay-1">
+                    <div class="form-header">
+                        <h3>Send a message</h3>
+                        <p>Fill this out and we will get back to you within 48 hours.</p>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="john@company.com" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="company">Company / Organization <span class="label-optional">(optional)</span></label>
+                                <input type="text" id="company" name="company" placeholder="Acme Inc.">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Topic</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" disabled selected>Select a topic</option>
+                                    <option value="investment">Investment Inquiry</option>
+                                    <option value="partnership">Partnership</option>
+                                    <option value="publishing">Publishing</option>
+                                    <option value="media">Media / Press</option>
+                                    <option value="careers">Careers</option>
+                                    <option value="playtest">Playtesting</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project, idea, or question. The more detail, the better we can help." required></textarea>
+                            <span class="char-count" id="charCount">0 / 1000</span>
+                        </div>
+                        <div class="form-group form-checkbox">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" id="newsletter">
+                                <span class="checkmark"></span>
+                                <span class="checkbox-text">Keep me updated on EntrePoly development and studio news</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader" style="display:none;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
+                            </span>
+                            <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                        </button>
+                        <div class="form-success" id="formSuccess" style="display:none;">
+                            <div class="success-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            </div>
+                            <h4>Message sent!</h4>
+                            <p>We have received your message and will reply within 48 hours. Check your inbox.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-cta">
+            <div class="container">
+                <div class="footer-cta-inner reveal">
+                    <div class="footer-cta-content">
+                        <h2>Ready to build something that matters?</h2>
+                        <p>Whether you are an investor, partner, or player — we want to hear from you.</p>
+                    </div>
+                    <a href="#contact" class="btn btn-primary btn-lg">Start a Conversation</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="#" class="logo">
+                            <div class="logo-icon">OM</div>
+                            OldMateStudios
+                        </a>
+                        <p>Building Games That Matter. From Nairobi, Kenya — for the world.</p>
+                        
+                        <div class="footer-newsletter">
+                            <h5>Studio updates</h5>
+                            <form class="newsletter-form" id="newsletterForm">
+                                <input type="email" placeholder="your@email.com" required>
+                                <button type="submit" aria-label="Subscribe">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                </button>
+                            </form>
+                            <span class="newsletter-note">No spam. Unsubscribe anytime.</span>
+                        </div>
+
+                        <div class="footer-socials">
+                            <a href="#" class="footer-social" aria-label="Twitter">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                            </a>
+                            <a href="#" class="footer-social" aria-label="LinkedIn">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            </a>
+                            <a href="#" class="footer-social" aria-label="GitHub">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                            <a href="#" class="footer-social" aria-label="YouTube">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            </a>
+                            <a href="#" class="footer-social" aria-label="Discord">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>Studio</h4>
+                        <ul>
+                            <li><a href="#studio">Our Story</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#philosophy">Philosophy</a></li>
+                            <li><a href="#careers">Careers</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>Projects</h4>
+                        <ul>
+                            <li><a href="#projects">EntrePoly</a></li>
+                            <li><a href="#projects-grid">Upcoming</a></li>
+                            <li><a href="#projects-grid">Research</a></li>
+                            <li><a href="#">Dev Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#partners">Partners</a></li>
+                            <li><a href="#news">News</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#">Press Kit</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-inner">
+                    <div class="footer-credit">
+                        <p>© 2026 OldMateStudios. All rights reserved.</p>
+                        <span class="footer-made">Made with ambition in Nairobi, Kenya</span>
+                    </div>
+                    <div class="footer-seo">
+                        <span>Game Studio Kenya</span>
+                        <span>•</span>
+                        <span>African Game Development</span>
+                        <span>•</span>
+                        <span>Educational Games</span>
+                        <span>•</span>
+                        <span>Serious Games</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+        </button>
+    </footer>
+
+    <script>
+        /* ============================================
+           ANIMATED BACKGROUND CANVAS
+           ============================================ */
+        const canvas = document.getElementById('bg-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        let animationId;
+        let mouseX = 0;
+        let mouseY = 0;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        class Particle {
+            constructor() {
+                this.reset();
+            }
+
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2 + 0.5;
+                this.speedX = (Math.random() - 0.5) * 0.3;
+                this.speedY = (Math.random() - 0.5) * 0.3;
+                this.opacity = Math.random() * 0.5 + 0.1;
+                this.color = Math.random() > 0.5 ? '16, 185, 129' : '6, 182, 212';
+                this.baseX = this.x;
+                this.baseY = this.y;
+            }
+
+            update() {
+                // Gentle drift
+                this.x += this.speedX;
+                this.y += this.speedY;
+
+                // Mouse repulsion
+                const dx = mouseX - this.x;
+                const dy = mouseY - this.y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+                const maxDistance = 150;
+
+                if (distance < maxDistance) {
+                    const force = (maxDistance - distance) / maxDistance;
+                    const angle = Math.atan2(dy, dx);
+                    this.x -= Math.cos(angle) * force * 2;
+                    this.y -= Math.sin(angle) * force * 2;
+                }
+
+                // Return to base position slowly
+                this.x += (this.baseX - this.x) * 0.01;
+                this.y += (this.baseY - this.y) * 0.01;
+
+                // Bounce off edges
+                if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+                if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(${this.color}, ${this.opacity})`;
+                ctx.fill();
+            }
+        }
+
+        function initParticles() {
+            particles = [];
+            const count = Math.min(80, Math.floor((canvas.width * canvas.height) / 15000));
+            for (let i = 0; i < count; i++) {
+                particles.push(new Particle());
+            }
+        }
+
+        function drawConnections() {
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+
+                    if (distance < 150) {
+                        const opacity = (1 - distance / 150) * 0.08;
+                        ctx.beginPath();
+                        ctx.strokeStyle = `rgba(100, 116, 139, ${opacity})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            
+            drawConnections();
+            animationId = requestAnimationFrame(animate);
+        }
+
+        resizeCanvas();
+        initParticles();
+        animate();
+
+        window.addEventListener('resize', () => {
+            resizeCanvas();
+            initParticles();
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        /* ============================================
+           NAVBAR SCROLL EFFECT
+           ============================================ */
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        /* ============================================
+           SCROLL REVEAL
+           ============================================ */
+        const revealElements = document.querySelectorAll('.reveal');
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        /* ============================================
+           ANIMATED COUNTERS
+           ============================================ */
+        const counters = document.querySelectorAll('.hero-stat-number[data-target]');
+        
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = parseInt(entry.target.getAttribute('data-target'));
+                    const duration = 2000;
+                    const step = target / (duration / 16);
+                    let current = 0;
+
+                    const updateCounter = () => {
+                        current += step;
+                        if (current < target) {
+                            entry.target.textContent = Math.floor(current);
+                            requestAnimationFrame(updateCounter);
+                        } else {
+                            entry.target.textContent = target;
+                        }
+                    };
+
+                    updateCounter();
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        counters.forEach(counter => counterObserver.observe(counter));
+
+        /* ============================================
+           PROJECT TABS
+           ============================================ */
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabPanels = document.querySelectorAll('.tab-panel');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tab = btn.getAttribute('data-tab');
+                
+                tabBtns.forEach(b => b.classList.remove('active'));
+                tabPanels.forEach(p => p.classList.remove('active'));
+                
+                btn.classList.add('active');
+                document.getElementById(tab).classList.add('active');
+            });
+        });
+
+        /* ============================================
+           CAREERS ACCORDION
+           ============================================ */
+        const roleToggles = document.querySelectorAll('.role-toggle');
+
+        roleToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const roleItem = toggle.closest('.role-item');
+                const isOpen = roleItem.classList.contains('open');
+                
+                // Close all others
+                document.querySelectorAll('.role-item.open').forEach(item => {
+                    if (item !== roleItem) {
+                        item.classList.remove('open');
+                        item.querySelector('.role-toggle').setAttribute('aria-expanded', 'false');
+                    }
+                });
+                
+                // Toggle current
+                roleItem.classList.toggle('open');
+                toggle.setAttribute('aria-expanded', !isOpen);
+            });
+        });
+
+        /* ============================================
+           CONTACT FORM — ENHANCED
+           ============================================ */
+        const contactForm = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const btnText = submitBtn.querySelector('.btn-text');
+        const btnLoader = submitBtn.querySelector('.btn-loader');
+        const btnIcon = submitBtn.querySelector('.btn-icon');
+        const formSuccess = document.getElementById('formSuccess');
+        const charCount = document.getElementById('charCount');
+        const messageField = document.getElementById('message');
+
+        // Character counter
+        if (messageField && charCount) {
+            messageField.addEventListener('input', () => {
+                const len = messageField.value.length;
+                charCount.textContent = `${len} / 1000`;
+                if (len > 1000) {
+                    charCount.style.color = '#EF4444';
+                    messageField.style.borderColor = '#EF4444';
+                } else {
+                    charCount.style.color = '';
+                    messageField.style.borderColor = '';
+                }
+            });
+        }
+
+        // Form submission with loading state
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                // Validate message length
+                if (messageField && messageField.value.length > 1000) {
+                    messageField.focus();
+                    return;
+                }
+
+                // Show loading
+                if (btnText) btnText.style.display = 'none';
+                if (btnLoader) btnLoader.style.display = 'block';
+                if (btnIcon) btnIcon.style.display = 'none';
+                submitBtn.disabled = true;
+                submitBtn.style.cursor = 'wait';
+
+                // Simulate send (replace with actual API call)
+                setTimeout(() => {
+                    // Hide form elements, show success
+                    const formElements = contactForm.querySelectorAll('.form-row, .form-group:not(.form-success), .btn-full');
+                    formElements.forEach(el => {
+                        el.style.display = 'none';
+                    });
+                    if (formSuccess) formSuccess.style.display = 'block';
+                }, 1500);
+            });
+        }
+
+        /* ============================================
+           CONTACT FAQ ACCORDION
+           ============================================ */
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(q => {
+            q.addEventListener('click', () => {
+                const answer = q.nextElementSibling;
+                const isOpen = q.getAttribute('aria-expanded') === 'true';
+
+                // Close all others
+                faqQuestions.forEach(other => {
+                    if (other !== q) {
+                        other.setAttribute('aria-expanded', 'false');
+                        other.nextElementSibling.classList.remove('open');
+                    }
+                });
+
+                // Toggle current
+                q.setAttribute('aria-expanded', !isOpen);
+                answer.classList.toggle('open');
+            });
+        });
+        
+        /* ============================================
+           NEWSLETTER FORM
+        ============================================ */
+        const newsletterForm = document.getElementById('newsletterForm');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const btn = newsletterForm.querySelector('button');
+                const input = newsletterForm.querySelector('input');
+                
+                btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>';
+                btn.style.background = 'var(--primary-emerald)';
+                
+                setTimeout(() => {
+                    input.value = '';
+                    btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>';
+                }, 2000);
+            });
+        }
+
+        /* ============================================
+           BACK TO TOP
+           ============================================ */
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 800) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        /* ============================================
+           SMOOTH SCROLL FOR ANCHOR LINKS
+           ============================================ */
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    // Close mobile menu if open
+                    const navLinks = document.querySelector('.nav-links');
+                    if (navLinks && window.getComputedStyle(navLinks).position === 'absolute') {
+                        navLinks.style.display = 'none';
+                    }
+                }
+            });
+        });
+
+        /* ============================================
+           MOBILE MENU
+           ============================================ */
+        function toggleMobileMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const isOpen = navLinks.style.display === 'flex';
+            
+            if (isOpen) {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '100%';
+                navLinks.style.left = '0';
+                navLinks.style.right = '0';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.background = 'rgba(10, 10, 15, 0.95)';
+                navLinks.style.backdropFilter = 'blur(20px)';
+                navLinks.style.padding = '1.5rem';
+                navLinks.style.gap = '1.5rem';
+                navLinks.style.borderBottom = '1px solid var(--glass-border)';
+                navLinks.style.zIndex = '999';
+            }
+        }
+
+        /* ============================================
+           PARALLAX EFFECT FOR HERO GLOWS
+           ============================================ */
+        let ticking = false;
+        
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                requestAnimationFrame(() => {
+                    const scrolled = window.pageYOffset;
+                    const parallaxElements = document.querySelectorAll('.hero-glow');
+                    
+                    parallaxElements.forEach((el, index) => {
+                        const speed = 0.3 + (index * 0.1);
+                        el.style.transform = `translateY(${scrolled * speed}px)`;
+                    });
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+
+        /* ============================================
+           CURSOR GLOW EFFECT (Desktop only)
+           ============================================ */
+        if (window.matchMedia('(pointer: fine)').matches) {
+            const cursorGlow = document.createElement('div');
+            cursorGlow.style.cssText = `
+                position: fixed;
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, transparent 70%);
+                pointer-events: none;
+                z-index: 9999;
+                transform: translate(-50%, -50%);
+                transition: opacity 0.3s;
+                opacity: 0;
+            `;
+            document.body.appendChild(cursorGlow);
+
+            let cursorVisible = false;
+            let cursorTimeout;
+
+            document.addEventListener('mousemove', (e) => {
+                cursorGlow.style.left = e.clientX + 'px';
+                cursorGlow.style.top = e.clientY + 'px';
+                
+                if (!cursorVisible) {
+                    cursorGlow.style.opacity = '1';
+                    cursorVisible = true;
+                }
+
+                clearTimeout(cursorTimeout);
+                cursorTimeout = setTimeout(() => {
+                    cursorGlow.style.opacity = '0';
+                    cursorVisible = false;
+                }, 100);
+            });
+
+            document.addEventListener('mouseleave', () => {
+                cursorGlow.style.opacity = '0';
+                cursorVisible = false;
+            });
+        }
+
+        /* ============================================
+           NAV LINK ACTIVE STATE ON SCROLL
+           ============================================ */
+        const sections = document.querySelectorAll('section[id]');
+        const navLinkItems = document.querySelectorAll('.nav-links a');
+
+        const navObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    navLinkItems.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, {
+            threshold: 0.3,
+            rootMargin: '-80px 0px -50% 0px'
+        });
+
+        sections.forEach(section => navObserver.observe(section));
+    </script>
+</body>
+</html>
