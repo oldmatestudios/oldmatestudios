@@ -2,23 +2,23 @@
     CSS VARIABLES & RESET
     ============================================ */
 :root {
-    --primary-emerald: #10B981;
-    --primary-emerald-dark: #059669;
-    --primary-emerald-glow: rgba(16, 185, 129, 0.3);
-    --charcoal: #0A0A0F;
-    --charcoal-light: #12121A;
-    --charcoal-lighter: #1A1A24;
-    --slate: #64748B;
-    --slate-light: #94A3B8;
-    --white: #F8FAFC;
-    --white-dim: #E2E8F0;
-    --accent-cyan: #06B6D4;
-    --accent-cyan-glow: rgba(6, 182, 212, 0.3);
-    --accent-gold: #F59E0B;
-    --accent-gold-glow: rgba(245, 158, 11, 0.3);
-    --glass-bg: rgba(18, 18, 26, 0.7);
-    --glass-border: rgba(255, 255, 255, 0.08);
-    --glass-border-hover: rgba(16, 185, 129, 0.3);
+    --primary-emerald: #C79A2B;
+    --primary-emerald-dark: #A7770D;
+    --primary-emerald-glow: rgba(199, 154, 43, 0.22);
+    --charcoal: #FFF9F1;
+    --charcoal-light: #F7F1E4;
+    --charcoal-lighter: #F2E8D5;
+    --slate: #6B5842;
+    --slate-light: #4B3B2C;
+    --white: #1B1713;
+    --white-dim: #332D25;
+    --accent-cyan: #D6B15A;
+    --accent-cyan-glow: rgba(214, 177, 90, 0.18);
+    --accent-gold: #D7A63A;
+    --accent-gold-glow: rgba(215, 166, 58, 0.24);
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(168, 120, 13, 0.18);
+    --glass-border-hover: rgba(168, 120, 13, 0.42);
     --font-display: 'Space Grotesk', sans-serif;
     --font-body: 'Inter', sans-serif;
     --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
@@ -37,7 +37,7 @@ html {
 
 body {
     font-family: var(--font-body);
-    background-color: var(--charcoal);
+    background: linear-gradient(180deg, #FFFDF9 0%, #F7F1E4 100%);
     color: var(--white);
     line-height: 1.6;
     overflow-x: hidden;
@@ -218,11 +218,12 @@ body {
 }
 
 .nav.scrolled {
-    background: rgba(10, 10, 15, 0.85);
+    background: rgba(255, 249, 241, 0.86);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--glass-border);
+    border-bottom: 1px solid rgba(168, 120, 13, 0.18);
     padding: 0.75rem 0;
+    box-shadow: 0 12px 30px rgba(123, 98, 48, 0.08);
 }
 
 .nav-inner {
@@ -243,6 +244,16 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+
+.nav.scrolled .logo,
+.nav.scrolled .nav-links a,
+.nav.scrolled .mobile-menu-btn {
+    color: var(--slate-light);
+}
+
+.nav.scrolled .nav-links a::after {
+    background: var(--primary-emerald);
 }
 
 .logo-icon {
@@ -272,6 +283,10 @@ body {
     position: relative;
 }
 
+.nav-scrolled .nav-links a {
+    color: var(--slate-light);
+}
+
 .nav-links a::after {
     content: '';
     position: absolute;
@@ -285,7 +300,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: var(--white);
+    color: var(--primary-emerald-dark);
 }
 
 .nav-links a:hover::after {
@@ -301,7 +316,7 @@ body {
     display: none;
     background: none;
     border: none;
-    color: var(--white);
+    color: var(--slate-light);
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -1751,14 +1766,26 @@ body {
 }
 
 .logo-placeholder {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 84px;
     margin: 0 auto;
+    padding: 0.75rem;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid var(--glass-border);
+    overflow: hidden;
+}
+
+.partner-logo-img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
 }
 
 .logo-text {
